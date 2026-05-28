@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулиничи</title>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+     <!--FONTS-->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "MuseoModerno", sans-serif;}
+body,p {font-family: "Montserrat", sans-serif;}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="/index.html"><img src="img/main_logo.svg" alt="logo"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/über_uns.html" class="w3-bar-item w3-button">О НАС</a>
+      <a href="/produkt.html" class="w3-bar-item w3-button">ПРОДУКТ</a>
+      <a href="/arbeit.html" class="w3-bar-item w3-button">РАБОТА</a>
+      <a href="#contact" class="w3-bar-item w3-button">КОНТАКТ</a>
+    </div>
+    <!--small screens-->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!--Sidebar on small screens-->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index: 2001;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Закрыть ×</a>
+  <a href="/über_uns.html" onclick="w3_close()" class="w3-bar-item w3-button">О НАС</a>
+  <a href="/produkt.html" onclick="w3_close()" class="w3-bar-item w3-button">ПРОДУКТ</a>
+  <a href="/arbeit.html" onclick="w3_close()" class="w3-bar-item w3-button">РАБОТА</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">КОНТАКТ</a>
+</nav>
+
+<!-- Header with full-height image -->
+
+<!-- ===================================================== -->
+<!-- СЕКЦИЯ ГЕРОЯ КУЛИНИЧИ -->
+<!-- Scroll-based 3D image sequence animation -->
+<!-- ===================================================== -->
+
+<header class="hero-section" id="home">
+
+    <!-- Контейнер hero -->
+    <div class="hero-container">
+
+        <!-- Левая часть -->
+        <div class="hero-content">
+
+            <!-- Заголовок -->
+            <h1 class="hero-title">
+                Кулиничи
+            </h1>
+
+            <!-- Текст -->
+            <p class="hero-text">
+                Уже много лет пекарня приносит людям радость благодаря прекрасному вкусу и традиционным рецептам. Тигр Кулиничи символизирует силу, тепло и настоящую хлебопекарскую традицию.
+            </p>
+        <p><a href="#about" class="w3-button w3-padding-large w3-large w3-margin-top w3-hover-opacity-off" style="background-color:#FE651B; color:white;">Подробнее</a></p>
+        </div>
+        <!-- Правая часть -->
+        <div class="hero-viewer">
+
+            <!-- Canvas анимации -->
+            <canvas id="hero-canvas"></canvas>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">О НАС</h3>
+  <p class="w3-center w3-large">Ключи к нашему успеху</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <h3 class="w3-large">1960</h3>
+      <p>Впервые в городе увидели таинственного тигра. Никто не знал, откуда он пришёл. Говорили, что он ночью гуляет по улицам и любит запах свежего хлеба.</p>
+    </div>
+    <div class="w3-quarter">
+      <h3 class="w3-large">1972</h3>
+      <p>Тигр стал помогать старому пекарю. Тайком он носил мешки с мукой и охранял мастерскую ночью от воров и голодных голубей.</p>
+    </div>
+    <div class="w3-quarter">
+      <h3 class="w3-large">1995</h3>
+      <p>Официальное начало Кулиничи. Старый пекарь вместе с Тигром открыл первую настоящую пекарню в городе. Первый фирменный хлеб назывался «Тигровая корка».</p>
+    </div>
+    <div class="w3-quarter">
+      <h3 class="w3-large">2003</h3>
+      <p>Пекарня стала очень известной. Утром люди стояли в длинных очередях за тёплыми круассанами и тигровыми булочками с корицей.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+     <div class="w3-quarter">
+      <h3 class="w3-large">2008</h3>
+      <p>Пекарня испекла свой миллионный хлеб. В честь этого всем жителям города подарили бесплатные булочки.</p>
+    </div>
+    <div class="w3-quarter">
+      <h3 class="w3-large">2015</h3>
+      <p>Впервые начали продавать шоколадные «тигровые лапки». Они сразу стали любимыми сладостями детей.</p>
+    </div>
+      <div class="w3-quarter">
+        <h3 class="w3-large">2022</h3>
+        <p>В трудные времена пекарня бесплатно раздавала хлеб людям в беде и стала символом надежды.</p>
+      </div>
+      <div class="w3-quarter">
+      <h3 class="w3-large">2026</h3>
+      <p>Сегодня Кулиничи — не просто обычная пекарня. Она стала легендой. Многие до сих пор говорят, что ночью в муке можно увидеть тигровые лапки… хотя все двери закрыты.</p>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Kurz gesagt -->
+<div class="w3-container" style="padding:50px 16px 0px 16px;" id="kurzGesagt">
+  <div class="w3-row-padding">
+    <div class="w3-col m6" style="padding-top: 100px;">
+      <h3>Еда, которая напоминает дом</h3>
+      <p>Кулиничи — это история о вкусной выпечке, популярных десертах, перекусах и сытных обедах. О ваших кулинарных талантах, которые раскрываются, когда вы готовите вместе с нами. О вашем благополучии, которое рождается в сотрудничестве.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-right" src="/img/tiger.png" alt="Buildings" width="500" height="394">
+    </div>
+  </div>
+</div>
+
+
+<!-- New -->
+<div class="w3-container w3-center" style="padding:128px 16px; background-image: url('/img/background_02.png'); background-size: cover;" id="pricing">
+  <h3 style="color: white; font-weight: 500; font-size: 38px;">НОВИНКА!</h3>
+  <p class="w3-large" style="color: white; font-weight: 500; font-size: 32px;">Попробуйте прямо сейчас</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-hover-shadow" style="background-color: black;">
+        <li class="w3-xlarge w3-padding-32"><img src="/img/new_01.webp" alt="new_01" width="200px"></li>
+        <li class="w3-padding-16" style="color: white;"><b>30%</b> орехи</li>
+        <li class="w3-padding-16" style="color: white;"><b>40%</b> кленовый сироп</li>
+        <li class="w3-padding-16" style="color: white;"><b>30%</b> тесто</li>
+        <li class="w3-padding-16" style="color: white;"><b>С любовью</b> приготовлено</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide" style="color: white;">$ 10</h2>
+          <span class="w3-opacity" style="color: white;">за штуку</span>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-hover-shadow" style="background-color: #FE651B;">
+        <li class="w3-xlarge w3-padding-48"><img src="/img/new_02.png" alt="new_02" height="300px"></li>
+        <li class="w3-padding-16" style="color: white;"><b>30%</b> крем</li>
+        <li class="w3-padding-16" style="color: white;"><b>40%</b> вишня</li>
+        <li class="w3-padding-16" style="color: white;"><b>30%</b> тесто</li>
+        <li class="w3-padding-16" style="color: white;"><b>С любовью</b> приготовлено</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide" style="color: white;">$ 15</h2>
+          <span class="w3-opacity" style="color: white;">за штуку</span>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-hover-shadow" style="background-color: white;">
+        <li class="w3-xlarge w3-padding-32"><img src="/img/new_03.png" alt="new_03" width="300px"></li>
+        <li class="w3-padding-16" style="color: black;"><b>30%</b> корица</li>
+        <li class="w3-padding-16" style="color: black;"><b>40%</b> сахарная свекла</li>
+        <li class="w3-padding-16" style="color: black;"><b>30%</b> тесто</li>
+        <li class="w3-padding-16" style="color: black;"><b>С любовью</b> приготовлено</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">за штуку</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container" style="padding:128px 16px; background-color: black;" id="contact">
+  <h3 class="w3-center" style="color: white;">Контакт</h3>
+  <p class="w3-center w3-large" style="color: white;">Есть вопросы? Напишите нам сообщение:</p>
+  <div style="margin-top:48px">
+    <p style="color: white;"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style="color: white;"></i> Харьков</p>
+    <p style="color: white;"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style="color: white;"></i> Телефон: +380 50 77 646 35</p>
+    <p style="color: white;"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color: white;"> </i> Email: varvara.piatak@sluz.ch</p>
+    <p style="color: white;"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color: white;"> </i> Email: yehor.shevchenko@sluz.ch</p>
+    <br>
+    <form action="/action_page.html" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Имя" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Сообщение" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-white" style="margin-top: 40px;" type="submit">
+          <i class="fa fa-paper-plane"></i>  ОТПРАВИТЬ
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="/img/638b37e377d1c770b2949c7b_worker.webp" class="w3-image w3-greyscale" style="width:100%;margin-top:100px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64">
+  <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>Наверх</a>
+  <div class="w3-margin-top">
+    <a href="/index.html"><img src="img/main_logo.svg" alt="logo" style="max-width:120px; display:block; margin:0 auto;"></a>
+  </div>
+</footer>
+ 
+<script>
+  //Audio
+const sounds = [
+    new Audio("/audio/rarrr1.mp3"),
+    new Audio("/audio/rarrr2.mp3"),
+    new Audio("/audio/rarrr3.mp3"),
+    new Audio("/audio/rarrr4.mp3"),
+    new Audio("/audio/miau_miau.mp3")
+];
+
+document.addEventListener("click", () => {
+
+    // выбираем случайный звук
+    const randomSound = sounds[
+        Math.floor(Math.random() * sounds.length)
+    ];
+
+    // если звук уже играл
+    randomSound.currentTime = 0;
+
+    randomSound.play();
+});
+// БУОЛЧКА
+
+/* ===================================================== */
+/* HERO IMAGE SEQUENCE */
+/* ===================================================== */
+
+const heroFrameCount = 67;
+
+const heroCurrentFrame = (index) => {
+
+    return `Animation/ANIM${String(10001 + index)}.webp`;
+
+};
+
+const heroImages = [];
+
+const heroCanvas =
+    document.getElementById("hero-canvas");
+
+const heroContext =
+    heroCanvas.getContext("2d");
+
+/* ===================================================== */
+/* CANVAS SIZE */
+/* ===================================================== */
+
+function resizeHeroCanvas(){
+
+    heroCanvas.width = 1200;
+    heroCanvas.height = 1200;
+
+}
+
+resizeHeroCanvas();
+
+/* ===================================================== */
+/* DRAW IMAGE */
+/* ===================================================== */
+
+function drawHeroImage(img){
+
+    if(!img) return;
+
+    heroContext.clearRect(
+        0,
+        0,
+        heroCanvas.width,
+        heroCanvas.height
+    );
+
+    const scale = Math.min(
+        heroCanvas.width / img.width,
+        heroCanvas.height / img.height
+    );
+
+    const x =
+        (heroCanvas.width / 2) -
+        (img.width / 2) * scale;
+
+    const y =
+        (heroCanvas.height / 2) -
+        (img.height / 2) * scale;
+
+    heroContext.drawImage(
+        img,
+        x,
+        y,
+        img.width * scale,
+        img.height * scale
+    );
+
+}
+
+/* ===================================================== */
+/* PRELOAD */
+/* ===================================================== */
+
+for(let i = 0; i < heroFrameCount; i++){
+
+    const img = new Image();
+
+    img.src = heroCurrentFrame(i);
+
+    heroImages.push(img);
+
+}
+
+/* ===================================================== */
+/* INTRO PLAYBACK */
+/* ===================================================== */
+
+let introFrame = 0;
+
+function playHeroIntro(){
+
+    if(introFrame >= heroFrameCount) return;
+
+    drawHeroImage(heroImages[introFrame]);
+
+    introFrame++;
+
+    requestAnimationFrame(playHeroIntro);
+
+}
+
+heroImages[0].onload = () => {
+
+    playHeroIntro();
+
+};
+
+/* ===================================================== */
+/* SCROLL ANIMATION */
+/* ===================================================== */
+
+window.addEventListener("scroll", () => {
+
+    const heroSection =
+        document.querySelector(".hero-section");
+
+    const rect =
+        heroSection.getBoundingClientRect();
+
+    const scrollTop = -rect.top;
+
+    const maxScroll = window.innerHeight;
+
+    const scrollFraction =
+        scrollTop / maxScroll;
+
+    const frameIndex = Math.min(
+        heroFrameCount - 1,
+        Math.max(
+            0,
+            Math.floor(scrollFraction * heroFrameCount)
+        )
+    );
+
+    requestAnimationFrame(() => {
+
+        drawHeroImage(heroImages[frameIndex]);
+
+    });
+
+});
+
+/* ===================================================== */
+/* RESIZE */
+/* ===================================================== */
+
+window.addEventListener(
+    "resize",
+    resizeHeroCanvas
+);
+
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

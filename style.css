@@ -1,0 +1,330 @@
+
+    nav{
+        font-family: "MuseoModerno", sans-serif;
+    }
+    .w3-top{
+        background-color: #FE651B;
+        font-family: "MuseoModerno", sans-serif;
+        z-index: 2000;
+    }
+
+    #myNavbar .w3-bar-item {
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    #myNavbar .w3-bar-item:hover {
+        background-color: rgba(255, 190, 130, 0.35) !important;
+        color: white !important;
+    }
+
+    #myNavbar .w3-bar-item i {
+        color: white !important;
+        font-size: 20px;
+    }
+
+    footer.w3-center.w3-padding-64 {
+        padding: 32px 16px !important;
+    }
+
+
+    #myNavbar img {
+        width: 70px;
+        position: relative;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    #sidebarToggle {
+        font-size: 24px;
+        color: white;
+        z-index: 2000;
+    }
+
+    footer{
+        background-color: #FE651B;
+        padding: 10px;
+        
+    }
+   
+    .accordion {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #FE651B; 
+  color: white;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+#modal01{
+    z-index: 2100;
+}
+#kurzGesagt{
+    width: auto;
+    background-color: #FE651B;
+    color: white;
+}
+#kurzGesagt p{
+    font-size: 18px;
+}
+#kurzGesagt h3{
+    text-transform: uppercase;
+    font-family: "MuseoModerno", sans-serif;
+}
+
+/** СИГМА СИГМА БУЛКА СИНАБОНА */
+
+/* ===================================================== */
+/* HERO SECTION */
+/* ===================================================== */
+
+/* Главная секция hero */
+.hero-section{
+
+    /* Высота секции = экран */
+    height: 100vh;
+
+    /* Черный фон */
+    background-color: black;
+
+    /* Скрываем лишнее */
+    overflow: hidden;
+
+    /* Для absolute элементов */
+    position: relative;
+}
+
+/* Контейнер внутри hero */
+.hero-container{
+
+    /* Используем flex layout */
+    display: flex;
+
+    /* Выравнивание по вертикали */
+    align-items: center;
+
+    /* Пространство между текстом и анимацией */
+    justify-content: space-between;
+
+    /* Высота = экран */
+    height: 100vh;
+
+    /* Внутренние отступы */
+    padding-left: 8vw;
+    padding-right: 4vw;
+}
+
+
+
+/* ===================================================== */
+/* LEFT CONTENT */
+/* ===================================================== */
+
+/* Контейнер текста */
+.hero-content{
+
+    /* Текст поверх canvas */
+    position: relative;
+
+    /* Поверх canvas */
+    z-index: 5;
+
+    /* Ширина */
+    width: 45%;
+}
+
+
+/* Заголовок */
+.hero-title{
+
+    /* Ваш шрифт */
+    font-family: "MuseoModerno", sans-serif;
+
+    /* Адаптивный размер */
+    font-size: clamp(4rem, 9vw, 8rem);
+
+    /* Межстрочный интервал */
+    line-height: 0.9;
+
+    /* Толщина */
+    font-weight: 900;
+
+    /* Цвет */
+    color: white;
+
+    /* Отступ снизу */
+    margin-bottom: 24px;
+
+    /* Начальная прозрачность */
+    opacity: 0;
+
+    /* Начальная позиция */
+    transform: translateX(-80px);
+
+    /* Анимация появления */
+    animation: heroFadeLeft 1s ease forwards;
+
+    /* Задержка */
+    animation-delay: 0.2s;
+}
+
+/* Описание */
+.hero-text{
+
+    /* Шрифт */
+    font-family: "Montserrat", sans-serif;
+
+    /* Максимальная ширина */
+    max-width: 500px;
+
+    /* Цвет */
+    color: rgba(255,255,255,0.7);
+
+    /* Размер */
+    font-size: 1rem;
+
+    /* Межстрочный */
+    line-height: 1.8;
+
+    /* Отступ */
+    margin-bottom: 32px;
+
+    /* Начальная прозрачность */
+    opacity: 0;
+
+    /* Начальная позиция */
+    transform: translateX(-80px);
+
+    /* Анимация */
+    animation: heroFadeLeft 1s ease forwards;
+
+    /* Задержка */
+    animation-delay: 0.5s;
+}
+
+
+
+/* ===================================================== */
+/* RIGHT SIDE */
+/* ===================================================== */
+
+/* Контейнер canvas */
+.hero-viewer{
+
+    /* Ширина */
+    width: 55%;
+
+    /* Высота */
+    height: 100vh;
+
+    /* Flex */
+    display: flex;
+
+    /* Центр по вертикали */
+    align-items: center;
+
+    /* Центр по горизонтали */
+    justify-content: center;
+}
+
+
+/* Canvas */
+#hero-canvas{
+
+    /* Размер */
+    width: 100%;
+
+    /* Размер */
+    height: 100%;
+
+    /* Максимальная ширина */
+    max-width: 900px;
+
+    /* Максимальная высота */
+    max-height: 900px;
+}
+
+/* ===================================================== */
+/* INTRO ANIMATION */
+/* ===================================================== */
+
+/* Анимация появления слева */
+@keyframes heroFadeLeft{
+
+    to{
+
+        /* Конечная прозрачность */
+        opacity: 1;
+
+        /* Конечная позиция */
+        transform: translateX(0);
+    }
+
+}
+
+/* ===================================================== */
+/* MOBILE VERSION */
+/* ===================================================== */
+
+@media (max-width: 768px){
+
+    /* Контейнер hero */
+    .hero-container{
+
+        /* Элементы вертикально */
+        flex-direction: column-reverse;
+
+        /* Центрирование */
+        justify-content: center;
+
+        /* Отступ сверху */
+        padding-top: 100px;
+
+        /* Текст по центру */
+        text-align: center;
+    }
+
+    /* Текстовый блок */
+    .hero-content{
+
+        /* Полная ширина */
+        width: 100%;
+    }
+
+    /* Блок canvas */
+    .hero-viewer{
+
+        /* Полная ширина */
+        width: 100%;
+
+        /* Высота */
+        height: 45vh;
+    }
+
+    /* Заголовок */
+    .hero-title{
+
+        /* Размер */
+        font-size: 4rem;
+    }
+
+}

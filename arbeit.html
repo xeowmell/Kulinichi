@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Работа</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 { font-family: "MuseoModerno", sans-serif; }
+    body, p { font-family: "Montserrat", sans-serif; }
+    body, html { height: 100%; line-height: 1.8; }
+    .bgimg-1 { background-position: center; background-size: cover; min-height: 100%; }
+    .w3-bar .w3-button { padding: 16px; }
+  </style>
+</head>
+<body>
+  <div class="w3-top">
+    <div class="w3-bar w3-card" id="myNavbar">
+      <a href="/index.html"><img src="img/main_logo.svg" alt="logo"></a>
+      <div class="w3-right w3-hide-small">
+        <a href="/index.html" class="w3-bar-item w3-button">ГЛАВНАЯ</a>
+        <a href="/über_uns.html" class="w3-bar-item w3-button">О НАС</a>
+        <a href="/produkt.html" class="w3-bar-item w3-button">ПРОДУКТ</a>
+        <a href="/arbeit.html" class="w3-bar-item w3-button">РАБОТА</a>
+      </div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index:2001;" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Закрыть ×</a>
+    <a href="/index.html" class="w3-bar-item w3-button">ГЛАВНАЯ</a>
+    <a href="/über_uns.html" onclick="w3_close()" class="w3-bar-item w3-button">О НАС</a>
+    <a href="/produkt.html" onclick="w3_close()" class="w3-bar-item w3-button">ПРОДУКТ</a>
+    <a href="/arbeit.html" onclick="w3_close()" class="w3-bar-item w3-button">РАБОТА</a>
+  </nav>
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <video autoplay muted loop id="myVideo" style="width:100%; height:auto; object-fit:cover;">
+      <source src="/VIDEO_KULINICH.mp4" type="video/mp4">
+    </video>
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <h1 class="hero-title">Работа в Кулиничи</h1>
+      <p class="hero-text" style="font-weight:600; color:white;">Мы выпекаем свежие изделия, обслуживаем клиентов и работаем в команде. Качество, свежесть и дружелюбие очень важны.</p>
+      <p><a href="#team" class="w3-button w3-padding-large w3-large w3-margin-top w3-hover-opacity-off" style="background-color:#FE651B; color:white;">Подробнее</a></p>
+    </div>
+  </header>
+  <div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">Наша команда</h3>
+    <p class="w3-center w3-large">Лучшие люди, которые у нас есть</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/img/kuzja.jpg" alt="Kuzja" style="width:100%">
+          <div class="w3-container">
+            <h3>Kuzja</h3>
+            <p class="w3-opacity">Sound Maker</p>
+            <p>Она создала все звуки сама и обработала их с большой креативностью. Каждый звук идеально подходит проекту.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/img/yehor.jpg" alt="Yehor" style="width:100%">
+          <div class="w3-container">
+            <h3>Kuchirявый</h3>
+            <p class="w3-opacity">Art Director</p>
+            <p>Он разработал весь визуальный дизайн проекта. Благодаря его идеям проект выглядит современным, красивым и профессиональным.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/img/varvara.jpg" alt="Varvara" style="width:100%">
+          <div class="w3-container">
+            <h3>Kriptoruckavichka</h3>
+            <p class="w3-opacity">Web Designer</p>
+            <p>Она отвечала за структуру и современный вид страницы. Благодаря её работе сайт выглядит аккуратным и креативным.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/img/oleg.jpg" alt="Oleg" style="width:100%">
+          <div class="w3-container">
+            <h3>Oleg</h3>
+            <p class="w3-opacity">Tiger</p>
+            <p>Тигр-пекарь — креативный персонаж Кулиничи. Он приносит радость, энергию и индивидуальность проекту. Олег главное лицо нашей пекарни.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="w3-center w3-padding-64">
+    <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>Наверх</a>
+    <div class="w3-margin-top">
+      <a href="/index.html"><img src="img/main_logo.svg" alt="logo" style="max-width:120px; display:block; margin:0 auto;"></a>
+    </div>
+  </footer>
+  <script>
+    const sounds = [
+      new Audio("/audio/rarrr1.mp3"),
+      new Audio("/audio/rarrr2.mp3"),
+      new Audio("/audio/rarrr3.mp3"),
+      new Audio("/audio/rarrr4.mp3"),
+      new Audio("/audio/miau_miau.mp3")
+    ];
+    document.addEventListener("click", () => {
+      const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+      randomSound.currentTime = 0;
+      randomSound.play();
+    });
+    var mySidebar = document.getElementById("mySidebar");
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+</body>
+</html>

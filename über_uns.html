@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+     <!--FONTS-->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "MuseoModerno", sans-serif;}
+body,p {font-family: "Montserrat", sans-serif;}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="/index.html"><img src="img/main_logo.svg" alt="logo"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/index.html" class="w3-bar-item w3-button">ГЛАВНАЯ</a>
+      <a href="/über_uns.html" class="w3-bar-item w3-button">О НАС</a>
+      <a href="/produkt.html" class="w3-bar-item w3-button">ПРОДУКТ</a>
+      <a href="/arbeit.html" class="w3-bar-item w3-button">РАБОТА</a>
+    </div>
+    <!--small screens-->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!--Sidebar on small screens-->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index: 2001;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Закрыть ×</a>
+  <a href="/index.html" class="w3-bar-item w3-button">ГЛАВНАЯ</a>
+  <a href="/über_uns.html" onclick="w3_close()" class="w3-bar-item w3-button">О НАС</a>
+  <a href="/produkt.html" onclick="w3_close()" class="w3-bar-item w3-button">ПРОДУКТ</a>
+  <a href="/arbeit.html" onclick="w3_close()" class="w3-bar-item w3-button">РАБОТА</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="background-image: url(/img/background_02.png);">
+ <!-- Контейнер hero -->
+    <div class="hero-container">
+
+        <!-- Левая часть -->
+        <div class="hero-content">
+
+            <!-- Заголовок -->
+            <h1 class="hero-title">
+              Кулиничи
+            </h1>
+
+            <!-- Текст -->
+            <p class="hero-text" style="font-weight: 600; color: white;">
+                Уже много лет пекарня дарит людям радость благодаря прекрасному вкусу и традиционным рецептам. Тигр Кулиничи символизирует силу, тепло и настоящую пекарную традицию.
+            </p>
+        <p><a href="#about" class="w3-button w3-padding-large w3-large w3-margin-top w3-hover-opacity-off" style="background-color:#FE651B; color:white;">Подробнее</a></p>
+        </div>
+
+        <!-- Правая часть -->
+         <div class="hero-viewer">
+          <img src="/img/tiger.png" alt="tiger" style="margin-left: 100px; margin-top: 270px;" id="audio">
+          <audio id="sound">
+    <source src="/audio/rarrr1.mp3" type="audio/mpeg">
+</audio>
+        </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">О НАС</h3>
+  <p class="w3-center w3-large">Ключи к нашему успеху</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <h3 class="w3-large">1960</h3>
+      <p>Впервые в городе заметили таинственного тигра. Никто не знал, откуда он пришёл. Говорили, что он ночью бродил по улицам и любил запах свежего хлеба.</p>
+    </div>
+    <div class="w3-quarter">
+      <h3 class="w3-large">1972</h3>
+      <p>Тигр начал помогать старому пекарю. Тайком он носил мешки с мукой и охранял пекарню ночью от воров и голодных голубей.</p>
+    </div>
+    <div class="w3-quarter">
+      <h3 class="w3-large">1995</h3>
+      <p>Официальное начало Кулиничи. Старый пекарь вместе с тигром открыл первую настоящую пекарню в городе. Первый фирменный хлеб назывался «Тигровая корка».</p>
+    </div>
+    <div class="w3-quarter">
+      <h3 class="w3-large">2003</h3>
+      <p>Пекарня стала очень популярной. Утром люди стояли в длинных очередях за тёплыми круассанами и тигровыми булочками с корицей.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+     <div class="w3-quarter">
+      <h3 class="w3-large">2008</h3>
+      <p>Пекарня испекла свой миллионный хлеб. В честь этого всем горожанам раздали бесплатные булочки.</p>
+    </div>
+    <div class="w3-quarter">
+      <h3 class="w3-large">2015</h3>
+      <p>Впервые начали продавать шоколадные «тигровые лапки». Они сразу стали любимой сладостью детей.</p>
+    </div>
+      <div class="w3-quarter">
+      <h3 class="w3-large">2022</h3>
+      <p>В трудные времена пекарня бесплатно раздавала хлеб нуждающимся и стала символом надежды.</p>
+    </div>
+      <div class="w3-quarter">
+      <h3 class="w3-large">2026</h3>
+      <p>Сегодня тигровая пекарня — это не просто обычная пекарня. Она стала легендой. Многие до сих пор говорят, что ночью в муке можно увидеть тигровые лапки… хотя все двери закрыты.</p>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Вопросы и ответы -->
+ <div style="background-color: black;">
+<h3 style="padding:16px; color: white;">Вопросы и ответы</h3>
+
+<button class="accordion">Когда началась история Кулиничи?</button>
+<div class="panel">
+  <p>История Кулиничи началась примерно в 1960-х годах, когда в город пришёл маленький тигр и полюбил свежий хлеб.</p>
+</div>
+
+<button class="accordion" >Сколько хлебов испекла пекарня до сих пор?</button>
+<div class="panel">
+  <p>Пекарня уже испекла более миллиона хлебов.</p>
+</div>
+
+<button class="accordion" >Когда открылась первая тигровая пекарня?</button>
+<div class="panel">
+  <p>Первая тигровая пекарня открылась в 1995 году.</p>
+</div>
+</div>
+
+<!-- Promo Section - "Wir wissen was wir backen" -->
+<div class="w3-container w3-white" style="padding:128px 16px">
+  <div class="w3-row-padding" style="display: flex; align-items: center;">
+    <div class="w3-col m6">
+      <h3>Мы знаем, что печём</h3>
+      <p>Мы печём свежий хлеб, хрустящие булочки, сочные пирожные и многие другие изделия для наших клиентов. Мы особенно внимательно относимся к вкусу, свежести и высокому качеству.
+
+    Каждый день мы используем тщательно отобранные ингредиенты, чтобы создавать продукты, которые не только вкусны, но и испечены с любовью и заботой. Наша цель — чтобы каждый кусочек приносил маленькое удовольствие.
+
+    На завтрак, к послеобеденному кофе или для особых моментов — наша выпечка делает повседневную жизнь наших клиентов немного лучше.</p></div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/img/Wir.png" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64">
+  <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>Наверх</a>
+  <div class="w3-margin-top">
+    <a href="/index.html"><img src="img/main_logo.svg" alt="logo" style="max-width:120px; display:block; margin:0 auto;"></a>
+  </div>
+</footer>
+ 
+<script>
+//Audio
+const sounds = [
+    new Audio("/audio/rarrr1.mp3"),
+    new Audio("/audio/rarrr2.mp3"),
+    new Audio("/audio/rarrr3.mp3"),
+    new Audio("/audio/rarrr4.mp3"),
+    new Audio("/audio/miau_miau.mp3")
+];
+
+document.addEventListener("click", () => {
+
+    // выбираем случайный звук
+    const randomSound = sounds[
+        Math.floor(Math.random() * sounds.length)
+    ];
+
+    // если звук уже играл
+    randomSound.currentTime = 0;
+
+    randomSound.play();
+});
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+const image = document.getElementById("audio");
+    const sound = document.getElementById("sound");
+
+    image.addEventListener("click", () => {
+        sound.play();
+    });
+
+// Accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
