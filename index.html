@@ -178,7 +178,7 @@ body, html {
     </div>
     <div class="w3-third">
       <ul class="w3-ul w3-hover-shadow" style="background-color: #FE651B;">
-        <li class="w3-xlarge w3-padding-48"><img src="/img/new_02.png" alt="new_02" height="300px"></li>
+        <li class="w3-xlarge w3-padding-48"><img class="tigr_bun" src="/img/new_02.png" alt="new_02" height="300px"></li>
         <li class="w3-padding-16" style="color: white;"><b>30%</b> крем</li>
         <li class="w3-padding-16" style="color: white;"><b>40%</b> вишня</li>
         <li class="w3-padding-16" style="color: white;"><b>30%</b> тесто</li>
@@ -191,7 +191,7 @@ body, html {
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-hover-shadow" style="background-color: white;">
-        <li class="w3-xlarge w3-padding-32"><img src="/img/new_03.png" alt="new_03" width="300px"></li>
+        <li class="w3-xlarge w3-padding-32"><img class="tigr_bun" src="/img/new_03.png" alt="new_03" width="300px"></li>
         <li class="w3-padding-16" style="color: black;"><b>30%</b> корица</li>
         <li class="w3-padding-16" style="color: black;"><b>40%</b> сахарная свекла</li>
         <li class="w3-padding-16" style="color: black;"><b>30%</b> тесто</li>
@@ -239,28 +239,7 @@ body, html {
 </footer>
  
 <script>
-  //Audio
-const sounds = [
-    new Audio("/audio/rarrr1.mp3"),
-    new Audio("/audio/rarrr2.mp3"),
-    new Audio("/audio/rarrr3.mp3"),
-    new Audio("/audio/rarrr4.mp3"),
-    new Audio("/audio/miau_miau.mp3")
-];
-
-document.addEventListener("click", () => {
-
-    // выбираем случайный звук
-    const randomSound = sounds[
-        Math.floor(Math.random() * sounds.length)
-    ];
-
-    // если звук уже играл
-    randomSound.currentTime = 0;
-
-    randomSound.play();
-});
-// БУОЛЧКА
+  // БУОЛЧКА
 
 /* ===================================================== */
 /* HERO IMAGE SEQUENCE */
@@ -416,6 +395,27 @@ window.addEventListener(
 );
 
 
+  //Audio
+const sounds = [
+    new Audio("/audio/rarrr1.mp3"),
+    new Audio("/audio/rarrr2.mp3"),
+    new Audio("/audio/rarrr3.mp3"),
+    new Audio("/audio/rarrr4.mp3"),
+    new Audio("/audio/miau_miau.mp3")
+];
+
+document.addEventListener("click", () => {
+
+    // выбираем случайный звук
+    const randomSound = sounds[
+        Math.floor(Math.random() * sounds.length)
+    ];
+
+    // если звук уже играл
+    randomSound.currentTime = 0;
+
+    randomSound.play();
+});
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");

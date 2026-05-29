@@ -291,13 +291,13 @@
     .hero-container{
 
         /* Элементы вертикально */
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         /* Центрирование */
         justify-content: center;
 
         /* Отступ сверху */
-        padding-top: 100px;
+        padding-top: 30px;
 
         /* Текст по центру */
         text-align: center;
@@ -305,7 +305,7 @@
 
     /* Текстовый блок */
     .hero-content{
-
+        padding-top: -20px;
         /* Полная ширина */
         width: 100%;
     }
@@ -320,11 +320,27 @@
         height: 45vh;
     }
 
+    /* На мобильных экранах видео в шапке должно занимать весь экран */
+    .bgimg-1 video {
+        width: 100%;
+        height: 100vh !important;
+        min-height: 100vh;
+        object-fit: cover;
+    }
+
+    .bgimg-1 {
+        min-height: 100vh;
+        height: 100vh;
+    }
+
     /* Заголовок */
     .hero-title{
 
         /* Размер */
         font-size: 4rem;
     }
-
+.tigr_bun{
+    width: 270px;
+    height: auto;
+}
 }

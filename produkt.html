@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукт</title>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+     <!--FONTS-->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "MuseoModerno", sans-serif;}
+body,p {font-family: "Montserrat", sans-serif;}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="/index.html"><img src="img/main_logo.svg" alt="logo"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/index.html" class="w3-bar-item w3-button">ГЛАВНАЯ</a>
+      <a href="/über_uns.html" class="w3-bar-item w3-button">О НАС</a>
+      <a href="/produkt.html" class="w3-bar-item w3-button">ПРОДУКТ</a>
+      <a href="/arbeit.html" class="w3-bar-item w3-button">РАБОТА</a>
+
+    </div>
+    <!--small screens-->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!--Sidebar on small screens-->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index: 2001;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Закрыть ×</a>
+  <a href="/index.html" class="w3-bar-item w3-button">ГЛАВНАЯ</a>
+  <a href="/über_uns.html" onclick="w3_close()" class="w3-bar-item w3-button">О НАС</a>
+  <a href="/produkt.html" onclick="w3_close()" class="w3-bar-item w3-button">ПРОДУКТ</a>
+  <a href="/arbeit.html" onclick="w3_close()" class="w3-bar-item w3-button">РАБОТА</a>
+</nav>
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="background-image: url(/img/638b0438346ec7400f7797bb_slider\ 2.webp);">
+ <!-- Контейнер hero -->
+    <div class="hero-container">
+
+        <!-- Левая часть -->
+        <div class="hero-content">
+
+            <!-- Заголовок -->
+            <h1 class="hero-title">
+              Продукты
+            </h1>
+
+            <!-- Текст -->
+            <p class="hero-text" style="font-weight: 600; color: white;">
+      Пекарня предлагает хлеб, булочки, торты, круассаны и многие другие изделия. В центре внимания — свежие ингредиенты и отличный вкус.
+            </p>
+          <p><a href="#product" class="w3-button w3-padding-large w3-large w3-margin-top w3-hover-opacity-off" style="background-color:#FE651B; color:white;">Подробнее</a></p>
+        </div>
+</header>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64" id="product">
+  <div class="w3-row-padding">
+        <div class="w3-col m6">
+      <h3>Наши продукты</h3>
+      <p>В Кулиничи изделия свежие, вкусные и высокого качества.
+    Мы каждый день выпекаем разные хлеба, булочки, торты и сладкую выпечку.</p>
+      <p>Наши продукты изготавливаются из хороших ингредиентов и с большой заботой.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i></i>Кулиничи тигровая булочка</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-center" style="width:90%; background-color: #FE651B; color: white;">90%</div>
+      </div>
+      <p class="w3-wide"><i></i>Кулиничи булочка с сыром</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-center" style="width:85%; background-color: #FE651B; color: white;">85%</div>
+      </div>
+      <p class="w3-wide"><i></i>Кулиничи сладкая булочка</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-center" style="width:75%; background-color: #FE651B; color: white;">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-padding-64" style="background-color: #FE651B; color: white;">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Булочек каждый день
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">52+</span>
+    <br>Люди каждый месяц умирают от ожирения<br>именно из-за нас!
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">67+</span>
+    <br>Просто крутая цифра<br>sixxx seven
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Процент жира<br>и мы этим гордимся
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Булочки Кулиничи</h3>
+  <p class="w3-center w3-large">Наши лучшие продукты</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/img/bun_1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Тигровая ролла — наша фирменная">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/img/bun_2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Весёлое тигровое печенье">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/img/bun_3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Не очень счастливый турист">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/img/bun_4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="67 Schichten">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/img/bun_5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Наблюдатель">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/img/bun_6.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Протеиновая трагедия">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/img/bun_7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Апокалипсис Берлинер">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/img/bun_8.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Финальный босс с посыпкой">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-white" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-white w3-padding-large w3-display-topright" title="Close Modal Image" id="close">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64" style="width: 500px;">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64">
+  <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>Наверх</a>
+  <div class="w3-margin-top">
+    <a href="/index.html"><img src="img/main_logo.svg" alt="logo" style="max-width:120px; display:block; margin:0 auto;"></a>
+  </div>
+</footer>
+ 
+<script>
+
+  //Audio
+const sounds = [
+    new Audio("/audio/rarrr1.mp3"),
+    new Audio("/audio/rarrr2.mp3"),
+    new Audio("/audio/rarrr3.mp3"),
+    new Audio("/audio/rarrr4.mp3"),
+    new Audio("/audio/miau_miau.mp3")
+];
+
+document.addEventListener("click", () => {
+
+    // выбираем случайный звук
+    const randomSound = sounds[
+        Math.floor(Math.random() * sounds.length)
+    ];
+
+    // если звук уже играл
+    randomSound.currentTime = 0;
+
+    randomSound.play();
+});
+
+    // Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
